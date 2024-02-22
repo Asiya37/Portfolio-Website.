@@ -1,0 +1,417 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+    padding-bottom: 10px;
+    z-index: 999;
+
+}
+
+.title {
+    font-weight: 600;
+    padding-left: 150px;
+}
+
+.navbar ul {
+    padding-right: 100px;
+    padding-left: 500px;
+}
+
+.navbar ul li {
+
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.navbar ul li a {
+    display: inline;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    color: aqua;
+}
+.navbar a.active{
+    color: aqua;
+}
+
+.home {
+    margin-bottom: 10%;
+
+    z-index: 100;
+}
+
+.home-content {
+
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#menu-icon {
+    color: aqua;
+    font-size: 3rem;
+    display: none;
+}
+
+.home .Title {
+    padding-top: 120px;
+    min-height: 60vh;
+
+    padding-left: 150px;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.img img {
+    height: 90vh;
+    padding-top: 90px;
+    padding-right: 180px;
+}
+
+
+
+.social-Media a {
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    color: aqua;
+    margin: 1.9rem 1rem 1.9rem 0;
+}
+
+.social-Media :hover {
+    background: aqua;
+
+    color: black;
+    box-shadow: 0 0 2.5rem aqua;
+
+
+}
+
+span {
+    color: aqua;
+}
+
+.btn {
+    display: inline-block;
+    background: aqua;
+    text-decoration: none;
+    padding: 5px 17px;
+    color: black;
+    border: 2px solid aqua;
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background: black;
+    color: aqua;
+    box-shadow: 0 0 2.5rem aqua;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+    background-color: rgb(34, 33, 33);
+}
+
+.about-img img {
+    width: 30vw;
+    padding-left: 50px;
+
+}
+
+.heading {
+    text-align: left;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.5;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+    margin-top: -10px;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.services {
+    margin-bottom: 20px;
+}
+
+.services h1 {
+    margin-left: 39%;
+    padding-top: 5px;
+}
+
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.services-container .services-box {
+    flex: 1 1 3rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(34, 33, 33);
+    padding: 3rem 2rem 4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0.7rem;
+    height: 280px;
+
+
+}
+
+.services-container .services-box h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
+    margin-top: 3%;
+}
+
+.services-container .services-box p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 1.2rem;
+
+
+}
+
+.services-box .btn {
+    margin-top: 7%;
+    margin-left: 35%;
+}
+
+.services-box i {
+    margin-left: 45%;
+    color: aqua;
+    font-size: 5rem;
+}
+
+.services-container .services-box:hover {
+    border-color: aqua;
+    transform: scale(1.02);
+}
+
+.portfolio {
+    background-color: rgb(34, 33, 33);
+    z-index: 0;
+}
+
+.portfolio-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-template: 3.5rem;
+
+    gap: 1.5%;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+
+}
+
+.portfolio-box .portfolio-img {
+    width: 5%;
+
+    /* transition: 4s ease; */
+}
+
+/* .portfolio-box .portfolio-img :hover{
+    transform: scale(1.1);
+} */
+.portfolio-container .portfolio-box {
+    gap: 3rem;
+    position: relative;
+    border-radius: 20px;
+    height: 230px;
+    margin-bottom: 20px;
+
+    box-shadow: 1 1 2rem aqua;
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio .heading {
+    margin-left: 39%;
+    padding-top: 5px;
+}
+
+.portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0, 0, 0, .1), aqua);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(100%);
+    transition: 1s ease;
+}
+
+.portfolio-box :hover .portfolio-layer {
+    transform: translateY(0);
+
+
+}
+
+.portfolio-layer h3 {
+    font-size: 3rem;
+}
+
+.portfolio-layer {
+    font-size: 1.4rem;
+
+    font-weight: 400;
+}
+
+.portfolio-layer p {
+    margin-bottom: 15px;
+}
+
+.portfolio-layer a {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    background: white;
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    padding-top: 11px;
+    font-size: 1.8rem;
+    color: black;
+}
+
+.contacts h2 {
+    margin-left: 39%;
+    padding-top: 6px;
+
+}
+
+.contacts form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    margin-bottom: 1rem;
+    text-align: center;
+
+
+
+
+}
+
+.contacts form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+/* .contacts form .input-box .input 
+.contacts form .textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    /* color: white;
+    /* background-color: rgb(34, 33, 33); */
+/* border-radius: 8rem;
+    margin: 7rem 0;
+    background-color: red; */
+.contacts form .input-box input,
+.contacts form textarea {
+    width: 100%;
+
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: rgb(34, 33, 33);
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    color: white;
+
+}
+
+.contacts form .input-box input{
+
+    width: 49%;
+    margin-right: 0.6rem;
+    
+}
+.footer{
+    height: 30px;
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .footer-text{
+    font-size: 1.2rem;
+}
